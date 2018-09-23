@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+
+    <!-- Оболочка для контента -->
+    <main class="container-content">
+
+        <!-- Приветствие -->
+        <section class="initial-info">
+            <div class="container_in-in">
+                <h1>Приветствуeм вас!</h1>
+                <p>Правила следущие.</p>
+                <p>Вам нужно будет выбрать 7 понравившихся вам цветов.</p>
+                <p>(желательно и тёмные и светлые)</p>
+                <button type="button" class="close_in-in">Продолжить</button>
+            </div>
+            <span class="company">© O-P-A-B (GC)</span>
+        </section>
+
+        <!-- Подсказка на сайте -->
+        <aside class="hint">
+            <div class="shadow_hint"></div>
+            <div class="info_hint">Нажмите на блок с цветом, чтобы выбрать его. <br><br> Выбранные цвета будут доступны для просмотра в разделе "Выбранные цвета" в меню. А также вы можете посмотреть на счетчик и увидеть сколько цветов вы уже выбрали и посмотреть самые популярные цвета, также в меню.<br><br> Выберите 7 самых понравившихся цветов.
+                <span class="close_hint"></span>
+            </div>
+        </aside>
+
+        <!-- В конце участия -->
+        <div class="end">
+            <div class="container-end">
+                <span>Спасибо за ваш голос!=)</span>
+                <span>Если вы хотите посмотреть результаты, нажмите 'посмотреть'.</span>
+                <button type="button" class="end-cl">посмотреть</button>
+            </div>
+        </div>
+
+        <!-- меню -->
+        <nav class="nv">
+            <div class="end-block"></div>
+            <!--Кнопка адаптивоне меню -->
+            <div class="btn-menu">
+                <button type="button" class="btn-cl"></button>
+            </div>
+            <!--Кнопка адаптивное меню -->
+
+            <div class="seled-cl">Выбранные цвета</div>
+            <div class="counter">
+                <span class="text-counter">Вы выбрали</span>
+                <input type="text" class="count" value="0" disabled>
+                <span class="text-counter">цветов</span>
+            </div>
+            <div class="mopo-cl">Лучшие цвета</div>
+        </nav>
+
+        <!-- Тень глобальная -->
+        <div class="shadow"></div>
+        <!-- Лучшие цвета -->
+        <div class="most-popular">
+            <div class="mopo-info">
+                <span class="mopo-name">Лучшие цвета:</span>
+                <span class="mopo-text">
+                    Здесь статиска лучших 10 цветов по мнению пользователей (Рейтинг составлен на основе выборки).
+                </span>
+            </div>
+            <div class="mopo-colors"></div>
+        </div>
+        <!-- Выбранное -->
+        <div class="selected">
+            <div class="seled-info">
+                <span class="seled-name">Выбранные цвета:</span>
+                <span class="seled-text">
+                    Если вам не нравится цвет который вы выбрали, его можно убрать из списка "выбранные", просто нажав на этот цвет.
+                </span>
+            </div>
+            <div class="seled-colors"></div>
+        </div>
+
+        <!-- Цвета которые надо выбирать -->
+        <section class="selection"></section>
+
+    </main>
+<script src="JScript.js"></script>
+</body>
+
+</html>
